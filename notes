@@ -34,3 +34,6 @@ $ chsh
 ## cd back into build directory (~/heirloom/)
 ## edit ~/heirloom/build/mk.config
 SHELL = /bin/ush
+
+## edit ~/heirloom/makefile (LOWERCASE one)
+SHELL = /bin/ush
