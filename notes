@@ -87,3 +87,19 @@ make install
 ## now we have a lot of cool binaries in /usr/ucb, because that's a cool place for them
 ## also, most of our Unix tools are in /usr/5bin or /usr/5lib.  :)
 ## now, we get to test them out. O_o
+
+STEP 4: Let's make an old-school vi
+## return to master build directory (~/)
+cvs -d:pserver:anonymous@ex-vi.cvs.sourceforge.net:/cvsroot/ex-vi co ex-vi
+cd ex-vi
+
+## open Makefile and comment out these lines
+REINC = -I./libuxre -DUXRE
+RELIB = -L./libuxre -luxre
+RETGT = uxre
+...and try to build:
+
+$ex_re.c:101:27: error: ‘ep’ undeclared (first use in this function)
+$ #define RETURN(c)  return(ep);
+
+## GRRRR!!!!  Maybe linking against Termcap?
