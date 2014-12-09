@@ -1,0 +1,25 @@
+Noting the steps I've taken to try to port a traditional Unix build over the Linux Kernel.
+
+Step 1: Aquire Traditional Bourne shell
+* requires CVS *
+$ cvs -d:pserver:anonymous@heirloom.cvs.sourceforge.net:/cvsroot/heirloom \
+  login
+  CVS password:<just type return>
+  $ cvs -d:pserver:anonymous@heirloom.cvs.sourceforge.net:/cvsroot/heirloom \
+    co -P heirloom-sh
+
+$ cd heirloom-sh
+$ make
+
+## make works using gcc without errors.
+## note, I'm building from /home/<me>/...so reflect
+
+$ cp /bin/sh /bin/sh-backup
+$ cp ~/heirloom-sh/ /bin/ush
+
+edit /etc/shells to include /bin/ush
+$ chsh
+    (password entered here)
+    /bin/ush
+
+## log out, log back in.
