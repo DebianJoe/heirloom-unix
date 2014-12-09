@@ -62,3 +62,14 @@ make install
 ## yacc has built, but is not located in the /usr/local/bin dir.
 ## at this point, I attempt to maunually cp yacc and lex from
 ## the build directory directly into /usr/local/bin...may not work. O_o
+
+## doesn't, missing /usr/local/lib/yaccpar
+$ cp ~/heirloom-dev/yacc/yaccpar /usr/local/lib
+
+
+### Okie, dokie, that works.^_^, but now showing:
+##  ls.c:115:20: fatal error: curses.h: No such file or directory
+##   #include <curses.h>
+
+###....the DebJoe builds curses libs
+### and tries again. >.<
