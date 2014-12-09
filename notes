@@ -37,3 +37,18 @@ SHELL = /bin/ush
 
 ## edit ~/heirloom/makefile (LOWERCASE one)
 SHELL = /bin/ush
+
+....and build fails to to lack of
+....a Unix compatible yacc (my bad. -_-)
+
+Step 3:
+## drop back to main directory (~/)
+## Pull required Development tools from here:
+$ cvs -d:pserver:anonymous@heirloom.cvs.sourceforge.net:/cvsroot/heirloom \
+  co -P heirloom-devtools
+
+## cd to ~/heirloom-devtools
+## edit mk.config to point to our Bourne shell
+SHELL = /bin/ush
+
+## install a c++ compatible compiler (g++ is what I used)
