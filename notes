@@ -1,12 +1,20 @@
 Noting the steps I've taken to try to port a traditional Unix build over the Linux Kernel.
 
-Step 1: Aquire Traditional Bourne shell
+Step 1: Pull main source
 * requires CVS *
 $ cvs -d:pserver:anonymous@heirloom.cvs.sourceforge.net:/cvsroot/heirloom \
   login
   CVS password:<just type return>
-  $ cvs -d:pserver:anonymous@heirloom.cvs.sourceforge.net:/cvsroot/heirloom \
-    co -P heirloom-sh
+$ cvs -d:pserver:anonymous@heirloom.cvs.sourceforge.net:/cvsroot/heirloom \
+  co -P heirloom
+
+Step 2: Aquire Traditional Bourne shell
+$ cvs -d:pserver:anonymous@heirloom.cvs.sourceforge.net:/cvsroot/heirloom \
+  login
+  CVS password:<just type return>
+  ^^ if not still logged in ^^
+$ cvs -d:pserver:anonymous@heirloom.cvs.sourceforge.net:/cvsroot/heirloom \
+  co -P heirloom-sh
 
 $ cd heirloom-sh
 $ make
@@ -22,4 +30,7 @@ $ chsh
     (password entered here)
     /bin/ush
 
-## log out, log back in.
+## log out, log back in, new shell up.
+## cd back into build directory (~/heirloom/)
+## edit ~/heirloom/build/mk.config
+SHELL = /bin/ush
