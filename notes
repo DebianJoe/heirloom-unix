@@ -85,4 +85,5 @@ make install
 
 ## Victory! ^_^
 ## now we have a lot of cool binaries in /usr/ucb, because that's a cool place for them
-## need to add it to our $PATH
+## also, most of our Unix tools are in /usr/5bin or /usr/5lib.  :)
+## now, we get to test them out. O_o
