@@ -78,3 +78,11 @@ $ cp ~/heirloom-dev/yacc/yaccpar /usr/local/lib
 ## F*** YOU!!!!  Why couldn't you just install right to start with?
 mkdir /usr/local/lib/lex/
 cp ~/heirloom-devtools/lex/ncform /usr/local/lib/lex
+
+## drop back to ~/heirloom/
+make
+make install
+
+## Victory! ^_^
+## now we have a lot of cool binaries in /usr/ucb, because that's a cool place for them
+## need to add it to our $PATH
