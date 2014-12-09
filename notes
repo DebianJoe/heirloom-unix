@@ -50,5 +50,12 @@ $ cvs -d:pserver:anonymous@heirloom.cvs.sourceforge.net:/cvsroot/heirloom \
 ## cd to ~/heirloom-devtools
 ## edit mk.config to point to our Bourne shell
 SHELL = /bin/ush
+INSTALL = /usr/local/bin
+PREFIX = /usr/local
 
 ## install a c++ compatible compiler (g++ is what I used)
+##in ~/heirloom-devtools
+make
+make install
+*make mrproper, if something is broke ;) *
+....Build fails: /bin/ush: /usr/local/bin: cannot execute
