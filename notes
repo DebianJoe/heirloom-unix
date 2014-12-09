@@ -59,3 +59,6 @@ make
 make install
 *make mrproper, if something is broke ;) *
 ....Build fails: /bin/ush: /usr/local/bin: cannot execute
+## yacc has built, but is not located in the /usr/local/bin dir.
+## at this point, I attempt to maunually cp yacc and lex from
+## the build directory directly into /usr/local/bin...may not work. O_o
