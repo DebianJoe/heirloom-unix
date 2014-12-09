@@ -73,3 +73,8 @@ $ cp ~/heirloom-dev/yacc/yaccpar /usr/local/lib
 
 ###....the DebJoe builds curses libs
 ### and tries again. >.<
+
+"awk.lx.l":line 384: Error: Lex driver missing, file /usr/local/lib/lex/ncform
+## F*** YOU!!!!  Why couldn't you just install right to start with?
+mkdir /usr/local/lib/lex/
+cp ~/heirloom-devtools/lex/ncform /usr/local/lib/lex
