@@ -143,4 +143,37 @@ rm /usr/5bin/ul
 
 cp /bin/true /bin/true-backup
 cp /usr/5bin/true /bin/true
-rm /usr/5bin/true
+rm /usr/5bin/true /usr/5bin/tr #dupe rm'd
+
+cp /usr/bin/touch /usr/bin/touch-backup
+cp /usr/5bin/touch /usr/bin/touch
+rm /usr/5bin/touch
+
+mv /usr/5bin/time /usr/bin/time
+rm /usr/5bin/test #ucb dupe
+
+mv /usr/5bin/tcopy /usr/bin/tcopy
+mv /usr/5bin/tapecntl /usr/bin/tapecntl
+# ^ in case you need to copy to tape. :D
+
+cp /bin/tar /bin/tar-backup
+cp /usr/5bin/tar /bin/tar
+rm /usr/5bin/tar
+# pulled a tar.gz, checked this, passes
+
+cp /usr/bin/tail /usr/bin/tail-backup
+cp /usr/5bin/tail /usr/bin/tail
+rm /usr/5bin/tail
+
+cp /bin/sync /bin/sync-backup
+cp /usr/5bin/sync /bin/sync
+rm /usr/5bin/sync
+
+rm /usr/5bin/sum #another ucb dupe
+
+mv /usr/5bin/ptime /usr/bin/ptime
+
+cp /bin/false /bin/false-backup
+cp /usr/5bin/false /bin/false
+rm /usr/5bin/false
+# seems like a good time to reboot
