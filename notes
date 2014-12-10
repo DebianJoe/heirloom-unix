@@ -88,18 +88,15 @@ make install
 ## also, most of our Unix tools are in /usr/5bin or /usr/5lib.  :)
 ## now, we get to test them out. O_o
 
-STEP 4: Let's make an old-school vi
-## return to master build directory (~/)
-cvs -d:pserver:anonymous@ex-vi.cvs.sourceforge.net:/cvsroot/ex-vi co ex-vi
-cd ex-vi
+STEP 4:
 
-## open Makefile and comment out these lines
-REINC = -I./libuxre -DUXRE
-RELIB = -L./libuxre -luxre
-RETGT = uxre
-...and try to build:
+## Decided against remaking original vi, and using busybox's included vi
+## too many things needed to build, not worth the effort.
+## same reason as Arch guys: https://bugs.archlinux.org/task/20778
 
-$ex_re.c:101:27: error: ‘ep’ undeclared (first use in this function)
-$ #define RETURN(c)  return(ep);
+ln -s /bin/busybox /usr/bin/vi
 
-## GRRRR!!!!  Maybe linking against Termcap?
+STEP 5:
+## begin testing.  using a copy/replace/try method.
+## convert steps into working shell script (STEP5.sh)
+## which is located in this repo.
