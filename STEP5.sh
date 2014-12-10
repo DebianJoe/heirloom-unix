@@ -197,8 +197,33 @@ cp /usr/5bin/sleep /bin/sleep
 rm /usr/5bin/sleep
 
 mv /usr/5bin/setpgrp /usr/bin/setpgrp
-cp /bin/sed /bin/sed-backup
-cp /usr/5bin/sed /bin/sed
-rm /usr/5bin/sed
+# cp /bin/sed /bin/sed-backup
+# cp /usr/5bin/sed /bin/sed
+# rm /usr/5bin/sed
 # uhh, this broke in plan9, let's try here.
-# reboot test,
+# reboot test, Unix sed breaks networking >.<
+# replaced with backup.
+
+#cleaning symlinks and dupes
+rm /usr/5bin/settime /usr/5bin/tape /usr/5bin/uptime
+mv /usr/5bin/newform /usr/bin/newform
+rm /usr/5bin/catman
+rm /usr/5bin/ps
+
+cp /bin/rmdir /bin/rmdir-backup
+cp /usr/5bin/rmdir /bin/rmdir
+rm /usr/5bin/rmdir
+# tested this step, works
+
+cp /bin/rm /bin/rm-backup
+cp /usr/5bin/rm /bin/rm
+rm /usr/5bin/rm #obviously works. :)
+
+cp /usr/bin/sdiff /usr/bin/sdiff-backup
+cp /usr/5bin/sdiff /usr/bin/sdiff
+rm /usr/5bin/sdiff
+
+cp /bin/pwd /bin/pwd-backup
+cp /usr/5bin/pwd /bin/pwd
+rm /usr/5bin/pwd
+
