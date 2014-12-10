@@ -139,4 +139,8 @@ cp /usr/bin/ul /usr/bin/ul-backup
 cp /usr/5bin/ul /usr/bin/ul
 
 rm /usr/5bin/ul
+#reboot test, test passes
 
+cp /bin/true /bin/true-backup
+cp /usr/5bin/true /bin/true
+rm /usr/5bin/true
