@@ -37,4 +37,18 @@ rm /usr/ucb/ln /usr/ucb/chown
 
 cp /bin/stty /bin/stty-backup
 cp /usr/ucb/stty /bin/stty
-#test via full reboot at this step
+# test via full reboot at this step
+# test passes
+
+rm /usr/ucb/stty
+
+cp /usr/bin/install /usr/bin/install-backup
+cp /usr/ucb/install /usr/bin/install
+
+cp /usr/bin/groups /usr/bin/groups-backup
+cp /usr/ucb/groups /usr/bin/groups
+
+cp /bin/df /bin/df-backup
+cp /usr/ucb/df /bin/df
+
+rm /usr/ucb/install /usr/ucb/groups /usr/ucb/df
