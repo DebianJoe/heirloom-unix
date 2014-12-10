@@ -83,3 +83,30 @@ mv /usr/5bin/banner /usr/bin/
 
 cp /bin/su /bin/su-backup
 cp /usr/5bin/su /bin/su
+# test reboot, passes
+
+rm /usr/5bin/su /usr/5bin/tabs
+
+cp /usr/bin/yes /usr/bin/yes-backup
+cp /usr/5bin/yes /usr/bin/yes
+
+cp /usr/bin/xargs /usr/bin/xargs-backup
+cp /usr/5bin/xargs /usr/bin/xargs
+
+mv /usr/5bin/whodo /usr/bin/whodo
+
+cp /usr/bin/wc /usr/bin/wc-backup
+cp /usr/5bin/wc /usr/bin/wc
+
+rm /usr/5bin/wc /usr/5bin/xargs /usr/5bin/yes
+
+cp /usr/bin/who /usr/bin/who-backup
+cp /usr/5bin/who /usr/bin/who
+
+mv /usr/5bin/what /usr/bin/
+
+rm /usr/5bin/whoami #dupe of already moved file
+
+cp /usr/bin/tty /usr/bin/tty-backup
+cp /usr/5bin/tty /usr/bin/tty
+#test time
