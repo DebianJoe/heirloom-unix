@@ -306,4 +306,47 @@ rm /usr/5bin/more
 cp /bin/mknod /bin/mknod-backup
 cp /usr/5bin/mknod /bin/mknod
 rm /usr/5bin/mknod
-# reboot time,
+# reboot time, reboot passed
+
+cp /usr/bin/mkfifo /usr/bin/mkfifo-backup
+cp /usr/5bin/mkfifo /usr/bin/mkfifo
+rm /usr/5bin/mkfifo
+
+cp /bin/mkdir /bin/mkdir-backup
+cp /usr/5bin/mkdir /bin/mkdir
+rm /usr/5bin/mkdir
+
+cp /usr/bin/mesg /usr/bin/mesg-backup
+cp /usr/5bin/mesg /usr/bin/mesg
+rm /usr/5bin/mesg
+
+cp /usr/bin/man /usr/bin/man-backup
+cp /usr/5bin/man /usr/bin/man
+rm /usr/5bin/man
+
+mv /usr/5bin/mail /usr/bin/mail
+rm /usr/5bin/ls #ucb dupe
+rm /usr/5bin/lc #ls symlink
+
+cp /usr/bin/logname /usr/bin/logname-backup
+cp /usr/5bin/logname /usr/bin/logname
+rm /usr/5bin/logname
+
+# cp symlinks, not needed
+rm /usr/5bin/ln /usr/5bin/mv
+rm /usr/5bin/w   #symlink to whodo
+rm /usr/5bin/mt  #symlink to tapecntl
+rm /usr/5bin/awk #symlink to nawk
+
+cp /usr/bin/unexpand /usr/bin/unexpand-backup
+cp /usr/5bin/unexpand /usr/bin/unexpand
+rm /usr/5bin/unexpand
+
+mv /usr/5bin/pax /usr/bin/
+mv /usr/5bin/logins /usr/bin
+mv /usr/5bin/listusers /usr/bin/
+
+cp /usr/bin/line /usr/bin/line-backup
+cp /usr/5bin/line /usr/bin/line
+rm /usr/5bin/line
+#time to reboot, and do some testing
