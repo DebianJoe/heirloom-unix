@@ -52,3 +52,10 @@ cp /bin/df /bin/df-backup
 cp /usr/ucb/df /bin/df
 
 rm /usr/ucb/install /usr/ucb/groups /usr/ucb/df
+
+cp /usr/bin/sum /usr/bin/sum-backup
+cp /usr/ucb/sum /usr/bin/sum
+
+cp /usr/bin/du /usr/bin/du-backup
+cp /usr/ucb/du /usr/bin/du
+# test step
