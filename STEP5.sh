@@ -58,4 +58,28 @@ cp /usr/ucb/sum /usr/bin/sum
 
 cp /usr/bin/du /usr/bin/du-backup
 cp /usr/ucb/du /usr/bin/du
-# test step
+# test step, test passes
+
+rm /usr/ucb/sum /usr/ucb/du
+
+cp /bin/ps /bin/ps-backup
+cp /usr/ucb/ps /bin/ps
+# use bsd style switching here. =D
+
+cp /usr/bin/tr /usr/bin/tr-backup
+cp /usr/ucb/tr /usr/bin/tr
+
+rm /usr/ucb/tr /usr/ucb/ps
+mv /usr/ucb/deroff /usr/bin/deroff
+
+# At this point, only symlinks left in /usr/ucb/
+# leaving them for now
+
+cp /usr/bin/tabs /usr/bin/tabs-backup
+cp /usr/5bin/tabs /usr/bin/tabs
+
+mv /usr/5bin/shl /usr/bin/
+mv /usr/5bin/banner /usr/bin/
+
+cp /bin/su /bin/su-backup
+cp /usr/5bin/su /bin/su
