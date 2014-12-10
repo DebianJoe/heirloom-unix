@@ -226,4 +226,37 @@ rm /usr/5bin/sdiff
 cp /bin/pwd /bin/pwd-backup
 cp /usr/5bin/pwd /bin/pwd
 rm /usr/5bin/pwd
+#reboot, pass
 
+cp /usr/bin/renice /usr/bin/renice-backup
+cp /usr/5bin/renice /usr/bin/renice
+rm /usr/5bin/renice
+
+mv /usr/5bin/random /usr/bin/random
+mv /usr/5bin/psrinfo /usr/bin/psrinfo
+
+cp /usr/bin/printf /usr/bin/printf-backup
+cp /usr/5bin/printf /usr/bin/printf
+rm /usr/5bin/printf
+printf "testing printf\n"
+#works up to here
+
+rm /usr/5bin/pkill #symlink
+cp /usr/bin/pgrep /usr/bin/pgrep-backup
+cp /usr/5bin/pgrep /usr/bin/pgrep
+cp /usr/5bin/pgrep /usr/bin/pgrep
+rm /usr/5bin/pgrep
+mv /usr/5bin/priocntl /usr/bin/priocntl
+
+cp /usr/bin/printenv /usr/bin/printenv-backup
+cp /usr/5bin/printenv /usr/bin/printenv
+rm /usr/5bin/printenv
+
+cp /usr/bin/pr /usr/bin/pr-backup
+cp /usr/5bin/pr /usr/bin/pr
+rm /usr/5bin/pr
+
+cp /usr/bin/pg /usr/bin/pg-backup
+cp /usr/5bin/pg /usr/bin/pg
+rm /usr/5bin/pg
+#reboot time, 
