@@ -109,4 +109,14 @@ rm /usr/5bin/whoami #dupe of already moved file
 
 cp /usr/bin/tty /usr/bin/tty-backup
 cp /usr/5bin/tty /usr/bin/tty
-#test time
+#test time, passes test
+
+cp /usr/bin/tee /usr/bin/tee-backup
+cp /usr/5bin/tee /usr/bin/tee
+
+rm /usr/5bin/tty /usr/5bin/tee /usr/5bin/who
+
+cp /usr/bin/users /usr/bin/users-backup
+cp /usr/5bin/users /usr/bin/users
+rm /usr/5bin/users
+
