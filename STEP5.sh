@@ -350,3 +350,32 @@ cp /usr/bin/line /usr/bin/line-backup
 cp /usr/5bin/line /usr/bin/line
 rm /usr/5bin/line
 #time to reboot, and do some testing
+
+cp /bin/kill /bin/kill-backup
+cp /usr/5bin/kill /bin/kill
+rm /usr/5bin/kill
+
+cp /usr/bin/id /usr/bin/id-backup
+cp /usr/5bin/id /usr/bin/id
+rm /usr/5bin/id
+
+cp /bin/hostname /bin/hostname-backup
+cp /usr/5bin/hostname /bin/hostname
+rm /usr/5bin/hostname
+
+cp /usr/bin/join /usr/bin/join-backup
+cp /usr/5bin/join /usr/bin/join
+rm /usr/5bin/join
+
+cp /usr/bin/head /usr/bin/head-backup
+cp /usr/5bin/head /usr/bin/head
+rm /usr/5bin/head
+
+rm /usr/bin/hd #normally just a symlink
+mv /usr/5bin/hd /usr/bin/hd
+rm /usr/5bin/groups #dupe
+
+cp /bin/grep /bin/grep-backup
+cp /usr/5bin/grep /bin/grep
+rm /usr/5bin/grep
+# good time to run more tests
