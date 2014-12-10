@@ -104,7 +104,7 @@ cp /usr/bin/who /usr/bin/who-backup
 cp /usr/5bin/who /usr/bin/who
 
 mv /usr/5bin/what /usr/bin/
-
+r
 rm /usr/5bin/whoami #dupe of already moved file
 
 cp /usr/bin/tty /usr/bin/tty-backup
@@ -418,4 +418,50 @@ rm /usr/5bin/chmod
 cp /usr/bin/cksum /usr/bin/cksum-backup
 cp /usr/5bin/cksum /usr/bin/cksum
 rm /usr/5bin/cksum
+# full reboot, works fine
 
+rm /usr/5bin/echo  #ucb dupe
+rm /usr/5bin/chgrp #symlink to chown
+
+cp /bin/cpio /bin/cpio-backup
+cp /usr/5bin/cpio /bin/cpio
+rm /usr/5bin/cpio
+
+cp /usr/bin/col /usr/bin/col-backup
+cp /usr/5bin/col /usr/bin/col
+rm /usr/5bin/col
+
+cp /usr/bin/find /usr/bin/find-backup
+cp /usr/5bin/find /usr/bin/find
+rm /usr/5bin/find
+
+rm /usr/5bin/df #ucb dupe
+
+cp /usr/bin/cmp /usr/bin/cmp-backup
+cp /usr/5bin/cmp /usr/bin/cmp
+rm /usr/5bin/cmp
+
+cp /usr/bin/env /usr/bin/env-backup
+cp /usr/5bin/env /usr/bin/env
+rm /usr/5bin/env
+
+cp /bin/egrep /bin/egrep-backup
+cp /usr/5bin/egrep /bin/egrep
+rm /usr/5bin/egrep
+mv /usr/5bin/copy /usr/bin/
+
+rm /usr/5bin/dfspace #symlink
+
+cp /usr/bin/file /usr/bin/file-backup
+cp /usr/5bin/file /usr/bin/file
+rm /usr/5bin/file
+
+cp /usr/bin/comm /usr/bin/comm-backup
+cp /usr/5bin/comm /usr/bin/comm
+rm /usr/5bin/comm
+
+cp /bin/dd /bin/dd-backup
+cp /usr/5bin/dd /bin/dd
+rm /usr/5bin/dd
+
+mv /usr/5bin/ed /bin/ed
