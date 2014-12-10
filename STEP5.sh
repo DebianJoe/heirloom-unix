@@ -120,3 +120,23 @@ cp /usr/bin/users /usr/bin/users-backup
 cp /usr/5bin/users /usr/bin/users
 rm /usr/5bin/users
 
+cp /bin/uname /bin/uname-backup
+cp /usr/5bin/uname /bin/uname
+
+rm /usr/5bin/uname
+
+cp /usr/bin/uniq /usr/bin/uniq-backup
+cp /usr/5bin/uniq /usr/bin/uniq
+
+rm /usr/5bin/uniq
+
+cp /usr/bin/units /usr/bin/units-backup
+cp /usr/5bin/units /usr/bin/units
+
+rm /usr/5bin/units
+
+cp /usr/bin/ul /usr/bin/ul-backup
+cp /usr/5bin/ul /usr/bin/ul
+
+rm /usr/5bin/ul
+
