@@ -177,3 +177,28 @@ cp /bin/false /bin/false-backup
 cp /usr/5bin/false /bin/false
 rm /usr/5bin/false
 # seems like a good time to reboot
+# test passed
+
+rm /usr/5bin/stty #ucb dupe
+rm /usr/5bin/STTY #symlink to dupe
+
+cp /usr/bin/split /usr/bin/split-backup
+cp /usr/5bin/split /usr/bin/split
+rm /usr/5bin/split
+
+mv /usr/5bin/spell /usr/bin/spell
+
+cp /usr/bin/sort /usr/bin/sort-backup
+cp /usr/5bin/sort /usr/bin/sort
+rm /usr/5bin/sort
+
+cp /usr/bin/sleep /usr/bin/sleep-backup
+cp /usr/5bin/sleep /bin/sleep
+rm /usr/5bin/sleep
+
+mv /usr/5bin/setpgrp /usr/bin/setpgrp
+cp /bin/sed /bin/sed-backup
+cp /usr/5bin/sed /bin/sed
+rm /usr/5bin/sed
+# uhh, this broke in plan9, let's try here.
+# reboot test,
