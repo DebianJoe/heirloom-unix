@@ -259,4 +259,51 @@ rm /usr/5bin/pr
 cp /usr/bin/pg /usr/bin/pg-backup
 cp /usr/5bin/pg /usr/bin/pg
 rm /usr/5bin/pg
-#reboot time, 
+#reboot time, tests passed
+
+cp /usr/bin/pathchk /usr/bin/pathchk-backup
+cp /usr/5bin/pathchk /usr/bin/pathchk
+rm /usr/5bin/pathchk
+
+cp /usr/bin/paste /usr/bin/paste-backup
+cp /usr/5bin/paste /usr/bin/paste
+rm /usr/5bin/paste
+
+cp /usr/bin/od /usr/bin/od-backup
+cp /usr/5bin/od /usr/bin/od
+rm /usr/5bin/od
+
+mv /usr/5bin/oawk /usr/bin/
+
+cp /usr/bin/nohup /usr/bin/nohup-backup
+cp /usr/5bin/nohup /usr/bin/nohup
+rm /usr/5bin/nohup
+
+cp /usr/bin/nl /usr/bin/nl-backup
+cp /usr/5bin/nl /usr/bin/nl
+rm /usr/5bin/nl
+
+cp /usr/bin/nice /usr/bin/nice-backup
+cp /usr/5bin/nice /usr/bin/nice
+rm /usr/5bin/nice
+
+#clean some symlinks
+rm /usr/5bin/page /usr/5bin/whatis /usr/5bin/install
+mv /usr/5bin/news /usr/bin/news
+
+# nawk is errywhere!
+cp /usr/bin/nawk /usr/bin/nawk-backup
+cp /usr/5bin/nawk /usr/bin/nawk
+rm /usr/5bin/nawk
+rm /etc/alternatives/nawk
+rm /usr/bin/nawk-backup
+
+mv /usr/5bin/mvdir /usr/bin/mvdir
+cp /bin/more /bin/more-backup
+cp /usr/5bin/more /bin/more
+rm /usr/5bin/more
+
+cp /bin/mknod /bin/mknod-backup
+cp /usr/5bin/mknod /bin/mknod
+rm /usr/5bin/mknod
+# reboot time,
