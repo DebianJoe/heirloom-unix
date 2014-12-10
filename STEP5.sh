@@ -382,3 +382,40 @@ rm /usr/5bin/groups #dupe
 # good time to run more tests
 # like plan9, Unix grep causes major issues
 
+rm /usr/5bin/basename #ucb dupe
+rm /usr/5bin/chown    #ucb dupe
+
+mv /usr/5bin/bc /usr/bin/bc
+cp /bin/cp /bin/cp-backup
+mv /usr/5bin/cp /bin/cp
+#cp and cp -r are working...with Bourne. :)
+
+cp /bin/date /bin/date-backup
+cp /usr/5bin/date /bin/date
+rm /usr/5bin/date
+
+cp /usr/bin/cal /usr/bin/cal-backup
+cp /usr/5bin/cal /usr/bin/cal
+rm /usr/5bin/cal
+mv /usr/5bin/calendar /usr/bin/calender
+
+mv /usr/5bin/bdiff /usr/bin/bdiff
+cp /bin/cat /bin/cat-backup
+cp /usr/5bin/cat /bin/cat
+rm /usr/5bin/cat
+
+mv /usr/5bin/bfs /usr/bin/bfs
+
+cp /usr/bin/fold /usr/bin/fold-backup
+cp /usr/5bin/fold /usr/bin/fold
+rm /usr/5bin/fold
+
+cp /bin/chmod /bin/chmod-backup
+cp /usr/5bin/chmod /bin/chmod
+rm /usr/5bin/chmod
+# wrote a test script with escapes, it runs \o/
+
+cp /usr/bin/cksum /usr/bin/cksum-backup
+cp /usr/5bin/cksum /usr/bin/cksum
+rm /usr/5bin/cksum
+
