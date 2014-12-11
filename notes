@@ -100,3 +100,8 @@ STEP 5:
 ## begin testing.  using a copy/replace/try method.
 ## convert steps into working shell script (STEP5.sh)
 ## which is located in this repo.
+## in the future, run the 'STEP5.sh' script. :)
+
+STEP 6:
+## after using and making sure no issues, remove backups;
+## per the 'STEP6.sh program
