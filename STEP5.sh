@@ -465,3 +465,31 @@ cp /usr/5bin/dd /bin/dd
 rm /usr/5bin/dd
 
 mv /usr/5bin/ed /bin/ed
+#tested, working
+
+cp /usr/bin/cut /usr/bin/cut-backup
+cp /usr/5bin/cut /usr/bin/cut
+rm /usr/5bin/cut
+
+mv /usr/5bin/dc /usr/bin/dc
+cp /usr/bin/csplit /usr/bin/csplit-backup
+cp /usr/5bin/csplit /usr/bin/csplit
+rm /usr/5bin/csplit
+rm /usr/5bin/deroff #ucb dupe
+
+cp /usr/bin/diff /usr/bin/diff-backup
+cp /usr/5bin/diff /usr/bin/diff
+rm /usr/5bin/diff
+
+cp /usr/bin/diff3 /usr/bin/diff3-backup
+cp /usr/5bin/diff3 /usr/bin/diff3
+rm /usr/5bin/diff3
+
+mv /usr/5bin/factor /usr/bin/factor
+cp /bin/fgrep /bin/fgrep-backup
+cp /usr/5bin/fgrep /bin/fgrep
+rm /usr/5bin/fgrep
+
+cp /usr/bin/fmt /usr/bin/fmt-backup
+cp /usr/5bin/fmt /usr/bin/fmt
+rm /usr/5bin/fmt
