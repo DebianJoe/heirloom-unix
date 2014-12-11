@@ -105,3 +105,7 @@ STEP 5:
 STEP 6:
 ## after using and making sure no issues, remove backups;
 ## per the 'STEP6.sh program
+
+STEP 7:
+## unbind system from Debian's package management
+## upgrading via apt is certain breakage at this point.
