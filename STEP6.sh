@@ -40,3 +40,17 @@ rm /usr/bin/sum-backup /usr/bin/groups-backup
 rm /usr/bin/install-backup /usr/bin/basename-backup
 rm /usr/bin/test-backup /usr/bin/catman-backup
 rm /usr/bin/whoami-backup
+rm /bin/sh-backup /bin/echo-backup /bin/ls-backup
+rm /bin/ln-backup /bin/chown-backup /bin/stty-backup
+rm /bin/df-backup /bin/ps-backup /bin/su-backup
+rm /bin/uname-backup /bin/true-backup /bin/tar-backup
+rm /bin/sync-backup /bin/false-backup
+rm /bin/sleep-backup
+rm /bin/rmdir-backup /bin/rm-backup
+rm /bin/pwd-backup /bin/more-backup
+rm /bin/mknod-backup /bin/mkdir-backup
+rm /bin/kill-backup /bin/hostname-backup
+rm /bin/grep-backup /bin/cp-backup
+rm /bin/date-backup /bin/cat-backup
+rm /bin/chmod-backup /bin/cpio-backup
+rm /bin/egrep-backup /bin/fgrep-backup
