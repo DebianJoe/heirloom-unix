@@ -104,7 +104,6 @@ cp /usr/bin/who /usr/bin/who-backup
 cp /usr/5bin/who /usr/bin/who
 
 mv /usr/5bin/what /usr/bin/
-r
 rm /usr/5bin/whoami #dupe of already moved file
 
 cp /usr/bin/tty /usr/bin/tty-backup
@@ -521,3 +520,4 @@ cp /usr/5bin/getopt /usr/bin/getopt
 rm /usr/5bin/getopt
 
 rm /usr/5bin/apropos
+# tested, working
