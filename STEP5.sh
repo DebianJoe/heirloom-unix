@@ -493,3 +493,31 @@ rm /usr/5bin/fgrep
 cp /usr/bin/fmt /usr/bin/fmt-backup
 cp /usr/5bin/fmt /usr/bin/fmt
 rm /usr/5bin/fmt
+
+cp /usr/bin/getconf /usr/bin/getconf-backup
+cp /usr/5bin/posix/getconf /usr/bin/getconf
+rm /usr/5bin/getconf
+mv /usr/5bin/dircmp /usr/bin/dircmp
+
+cp /usr/bin/dirname /usr/bin/dirname-backup
+cp /usr/5bin/dirname /usr/bin/dirname
+rm /usr/5bin/dirname
+
+cp /usr/bin/expand /usr/bin/expand-backup
+cp /usr/5bin/expand /usr/bin/expand
+rm /usr/5bin/expand
+
+cp /usr/bin/du /usr/bin/du-backup
+cp /usr/5bin/du /usr/bin/du
+rm /usr/5bin/du
+
+cp /usr/bin/expr /usr/bin/expr-backup
+cp /usr/5bin/expr /usr/bin/expr
+rm /usr/5bin/expr
+
+mv /usr/5bin/fmtmsg /usr/bin/
+cp /usr/bin/getopt /usr/bin/getopt-backup
+cp /usr/5bin/getopt /usr/bin/getopt
+rm /usr/5bin/getopt
+
+rm /usr/5bin/apropos
